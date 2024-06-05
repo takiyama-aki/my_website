@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介サイト</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>私の自己紹介</h1>
+    </header>
+    <section id="profile">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="プロフィール写真">
+        <h2>名前</h2>
+        <p>簡単な紹介文</p>
+    </section>
+    <section id="about">
+        <h2>経歴</h2>
+        <p>経歴詳細</p>
+    </section>
+    <section id="skills">
+        <h2>スキル</h2>
+        <ul>
+            <li>スキル1</li>
+            <li>スキル2</li>
+            <li>スキル3</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>プロジェクト</h2>
+        <p>プロジェクト詳細</p>
+    </section>
+    <footer>
+        <p>© 2024 あなたの名前</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
