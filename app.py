@@ -18,8 +18,8 @@ def profile():
             'skills': ['Skill 1', 'Skill 2', 'Skill 3'],
             'projects': ['Project 1', 'Project 2', 'Project 3'],
 
-            'about': 'Keireki',
-            'aboutInfo': 'Keireki Shousai',
+            'about': 'Career',
+            'aboutInfo': 'Career details',
             'skill': 'Skills',
             'project': 'Projects',
             'title': 'My Profile'
