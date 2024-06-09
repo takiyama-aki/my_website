@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+    <!-- ヘッダー -->
     <header>
         <h1 id="title">私の自己紹介</h1>
         <button id="language-toggle">To English</button>
     </header>
+
+    <!-- メイン -->
     <section id="profile">
         <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="プロフィール写真">
         <h2>名前</h2>
@@ -32,6 +35,8 @@
         <h2>プロジェクト</h2>
         <p>プロジェクト詳細</p>
     </section>
+
+    <!-- フッター -->
     <footer>
         <p>© 2024 あなたの名前</p>
     </footer>
