@@ -1,33 +1,122 @@
+/* 全体のフォントスタイルと背景色を設定 */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* フォントファミリーを設定 */
+    margin: 0; /* 余白をリセット */
+    padding: 0; /* パディングをリセット */
+    background-color: #f4f4f4; /* 背景色を設定 */
 }
 
+/* ヘッダーのスタイル */
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+    background-color: #333; /* 背景色を設定 */
+    color: #fff; /* テキストカラーを設定 */
+    text-align: center; /* テキストを中央揃え */
+    padding: 1rem; /* パディングを設定 */
 }
 
+/* セクションのスタイル */
 section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 2rem; /* パディングを設定 */
+    margin: 1rem auto; /* 上下に1rem、左右に自動のマージンを設定 */
+    max-width: 800px; /* 最大幅を800pxに設定 */
+    background-color: #fff; /* 背景色を設定 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* ボックスシャドウを設定 */
 }
 
+/* プロフィール画像のスタイル */
 #profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+    width: 150px; /* 幅を150pxに設定 */
+    height: 150px; /* 高さを150pxに設定 */
+    border-radius: 50%; /* 円形にするためにボーダー半径を50%に設定 */
+    display: block; /* ブロック要素に設定 */
+    margin: 0 auto; /* 中央揃えにするためにマージンを設定 */
 }
 
+/* h2のテキストカラーを設定 */
 h2 {
-    color: #333;
+    color: #333; /* テキストカラーを設定 */
+}
+
+/* フレキシブルコンテナのスタイル */
+.container {
+    width: 80%; /* 幅を80%に設定 */
+    margin: 0 auto; /* 左右を自動のマージンで中央揃え */
+    display: flex; /* フレックスボックスを使用 */
+    flex-wrap: wrap; /* フレックスアイテムを折り返す */
+}
+
+/* フレキシブルアイテムのスタイル */
+.item {
+    flex: 1 1 300px; /* 各アイテムは最低300px幅を持ち、可能な限り拡張する */
+    margin: 10px; /* 周囲に10pxのマージンを設定 */
+}
+
+/* メニューの初期表示を非表示に設定 */
+.menu {
+    display: none; /* 非表示に設定 */
+}
+
+/* メニュー切り替えボタンのスタイル */
+.menu-toggle {
+    display: block; /* ブロック要素に設定 */
+    cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+/* メディアクエリ：768px以上の画面幅に適用 */
+@media (min-width: 768px) {
+    .menu {
+        display: flex; /* メニューをフレックスボックスで表示 */
+    }
+    .menu-toggle {
+        display: none; /* メニュー切り替えボタンを非表示に設定 */
+    }
+}
+
+/* レスポンシブデザイン用のメディアクエリ */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* タブレット用の幅を95%に設定 */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* スマートフォン用の幅を100%に設定 */
+    }
+}
+
+/* 画像とビデオの最大幅を設定 */
+img, video {
+    max-width: 100%; /* 最大幅を100%に設定 */
+    height: auto; /* 高さを自動で設定 */
+}
+
+/* ナビゲーションのスタイル */
+nav {
+    text-align: center; /* テキストを中央揃え */
+}
+
+nav ul {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* フレックスアイテムを中央揃え */
+    padding: 0; /* パディングをリセット */
+    margin: 0; /* 余白をリセット */
+}
+
+nav ul li {
+    list-style: none; /* リストスタイルをなしに設定 */
+    margin: 0 10px; /* 左右に10pxのマージンを設定 */
+}
+
+nav ul li a {
+    text-decoration: none; /* テキスト装飾をなしに設定 */
+    color: #fff; /* テキストカラーを設定 */
+}
+
+nav ul li.current a {
+    color: #F33135; /* カレントページのリンクカラーを設定 */
+}
+
+nav ul li a:hover {
+    color: #E7DA66; /* ホバー時のリンクカラーを設定 */
 }

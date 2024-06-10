@@ -60,4 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // ボタンのテキストを変更
         this.textContent = currentLanguage === 'ja' ? 'To English' : '日本語に切り替え';
     });
+
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.menu').classList.toggle('show');
+    });
+    
 });
+
+
